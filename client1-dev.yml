@@ -1,24 +1,5 @@
 server:
-  port: 9002
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:8761/eureka/
-  instance:
-  prefer-ip-address: true #跨域
-spring:
-  application:
-    name: client1
-  rabbitmq:
-    host: 192.168.8.183
-    port: 5672
-    username: guest
-    password: guest
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: CONFIG
-      profile: dev
+  port: 9001
+
 
 

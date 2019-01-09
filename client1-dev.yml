@@ -1,6 +1,8 @@
 server:
   port: 9001
 spring:
+  application:
+    name: client1
   rabbitmq:
     host: 192.168.8.183
     port: 5672

@@ -6,6 +6,6 @@ eureka:
   prefer-ip-address: true #跨域
 spring:
   application:
-    name: clent2
+    name: clent1
 server:
-  port: 9002
+  port: 9001

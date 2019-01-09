@@ -1,3 +1,11 @@
+server:
+  port: 9002
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+  prefer-ip-address: true #跨域
 spring:
   application:
     name: client1
@@ -6,6 +14,11 @@ spring:
     port: 5672
     username: guest
     password: guest
-server:
-  port: 9002
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG
+      profile: dev
+
 

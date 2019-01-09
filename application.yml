@@ -1,16 +1,10 @@
-spring:
-  application:
-    name: config
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/a974389757/config.git
-          username: 974389757@qq.com
-          password: 900327tq
+server:
+  port: 8761
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8761/eureka/
-env:
-  dev
+      defaultZone: http://127.0.0.1:${server.port}/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    enable-self-preservation: false

@@ -1,13 +1,16 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/a974389757/config.git
+          username: 974389757@qq.com
+          password: 900327tq
 eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka/
-  instance:
-  prefer-ip-address: true #跨域
-spring:
-  application:
-    name: clent1
-server:
-  port: 9001
-env ：
+env:
   dev

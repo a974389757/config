@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: client2
+  profiles: 
+    active: native
   rabbitmq:
     host: 192.168.8.183
     port: 5672
@@ -11,4 +13,5 @@ spring:
 feign:
   hystrix:
     enabled: true
+  
 

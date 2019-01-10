@@ -3,3 +3,5 @@ spring:
     name: zull
 server:
   port: 9006
+state：
+  ssss

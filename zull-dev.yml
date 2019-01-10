@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: zull
+server:
+  port: 9006
+zuul:
+  routes:
+    client2:
+      path：/client2/**
+        serviceId:client2

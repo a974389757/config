@@ -3,3 +3,12 @@ spring:
     name: zull
 server:
   port: 9006
+feign:
+  hystrix:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+      base-path: /
